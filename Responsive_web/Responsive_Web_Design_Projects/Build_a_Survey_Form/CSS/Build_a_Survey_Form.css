@@ -1,0 +1,163 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  color: #f3f3f3;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient( 
+    115deg
+    , rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#container {
+  width: 37%;
+  margin: 3rem auto 0 auto;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#header {
+  line-height: 0.9;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#survey-form {
+  padding: 2.5rem;
+  display: block;
+  margin-top: 0em;
+  background: #2C2B4A;
+  border-radius: 0.25rem;
+}
+
+#name {
+  margin-bottom: 10px;
+}
+
+#name #name-text {
+  width: 100%;
+  border-radius: 0.25rem;
+  height: 2rem;
+}
+
+#email {
+  margin-bottom: 10px;
+}
+
+#email  #email-text {
+  width: 100%;
+  border-radius: 0.25rem;
+  height: 2rem;
+}
+
+#age #age-text {
+  width: 100%;
+  border-radius: 0.25rem;
+  height: 2.1rem;
+}
+
+#select {
+  line-height: 0.9;
+  width: 100%;
+}
+
+#select p{
+  margin-bottom: 15px;
+}
+
+#select #dropdown {
+  width: 633px;
+  height: 2.4rem;
+  border-radius: 0.25rem;
+  color: #495057;
+}
+
+#radio {
+  display: inline-block;
+  margin-right: 0.6rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  margin: 0;
+}
+
+#radio p {
+  margin-bottom: 5px;
+}
+
+#radio label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#radio .input-radio {
+  display: inline-block;
+  margin-right: 0.6rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+#checkbox {
+  display: inline-block;
+  margin-right: 0.6rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  margin: 0;
+}
+
+#checkbox p {
+  margin-bottom: 5px;
+}
+
+#checkbox label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#checkbox .input-checkbox {
+  display: inline-block;
+  margin-right: 0.6rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+#text p{
+  margin-bottom: 5px;
+}
+
+#text #textarea {
+  padding: 0.625rem;
+  resize: vertical;
+}
+
+.submit {
+  background-color: #37AF65;
+  width: 633px;
+  height: 2.5rem;
+  margin-top: 20px;
+  border-radius: 0.2rem;
+}
+
+button, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  height: 120px;
+  width: 100%;
+} 
