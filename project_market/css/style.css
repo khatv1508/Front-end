@@ -4,8 +4,6 @@ body {
 
 .top-bar {
     background: black;
-    height: 90px;
-    padding: 10px 320px;
     align-items: center;
 }
 
@@ -14,6 +12,16 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+@media screen and (min-width: 400px) {
+    .top-bar .container {
+        height: 60px;
+    }
+}
+
+.top-bar .container {
+    height: 90px;
+    background: none;
 }
 
 .top-bar .top-container .top {
@@ -30,14 +38,22 @@ body {
     background: #333333;
 }
 
-.top-bar .top-container .top .clock, .discount {
-    width: 37px;
-    height: 37px;
+@media screen and (min-width: 400px) {
+    .top-bar .top-container .top img {
+        width: 30px;
+        height: 30px;
+    }
 }
 
-.top-bar .top .car {
+.top-bar .top-container .top img {
     width: 50px;
-    height: 30px;
+    height: 50px;
+}
+
+@media screen and (min-width: 400px) {
+    .top-bar .top .text{
+        padding: 5px 8px;
+    }
 }
 
 .top-bar .top .text{
@@ -48,9 +64,21 @@ body {
     margin-top: 10px;
 }
 
+@media screen and (min-width: 400px) {
+    .top-bar .top .text h4{
+        font-size: 8px;
+    }
+}
+
 .top-bar .top .text h4{
     color: white;
     font-size: 20px;
+}
+
+@media screen and (min-width: 400px) {
+    .top-bar .top .text p{
+        font-size: 6px;
+    }
 }
 
 .top-bar .top .text p{
@@ -86,8 +114,11 @@ body {
     padding: 0 25px;
 }
 
-.container .navbar .top-left .currency {
-    margin-left: 10px;
+@media screen and (min-width: 400px) {
+    .container .navbar .top-left img {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .container .navbar .top-left img {
@@ -95,10 +126,26 @@ body {
     height: 20px;
 }
 
+@media screen and (min-width: 400px) {
+    .container .navbar .top-left select {
+        font-size: 10px;
+    }
+}
+
 .container .navbar .top-left select {
     font-size: 14px;
     border: none;
     color: #ababab;
+}
+
+@media screen and (min-width: 400px) {
+    .container .navbar .top-left .currency {
+        margin-left: 0;
+    }
+}
+
+.container .navbar .top-left .currency {
+    margin-left: 10px;
 }
 
 .container .navbar .top-right ul {
@@ -116,8 +163,6 @@ body {
 
 .container .navbar .top-right img {
     margin-right: 5px;
-    width: 15px;
-    height: 14px;
 }
 
 .container .navbar .top-right p {
@@ -128,24 +173,19 @@ body {
     padding-top: 10px;
 }
 
-.container .navbar .top-right .login img {
-    width: 12px;
-    height: 15px;
-}
-
 .container .navbar .top-right .cart {
+    background: black;
     width: 50px;
-    height: 40px;
+    height: 50px;
 }
 
 .container .navbar .top-right .btn-cart {
-    background: black;
+    background: none;
     width: 50px;
+    height: 50px;
 }
 
 .container .navbar .top-right .cart img {
-    min-height: 1rem;
-    min-width: 1rem;
     margin: 12px 12px;
 }
 
@@ -171,7 +211,7 @@ body {
 }
 
 .logo h1 {
-    line-height: 15px;
+    line-height: 20px;
     font-weight: 800;
 }
 
@@ -209,7 +249,7 @@ body {
 }
 
 .search .icon-search .btn-search {
-    background: #f4a137;
+    background: none;
     border: none;
 }
 
@@ -223,7 +263,6 @@ body {
     list-style: none;
     justify-content: space-between;
     flex-direction: row;
-    padding-right: 195px;
     margin-left: 35px;
 }
 
@@ -232,21 +271,18 @@ body {
     text-decoration: none;
 }
 
-.menu .menu-left .nav-menu-left span {
-    color: #222222;
-}
-
-.menu .menu-left .nav-menu-left img {
-    top: 145px;
-    left: 205px;
-    position: absolute;
-}
-
 .menu .menu-left .nav-menu-left .caret {
+    color: #222222;
     font-weight: bold;
 }
 
-.menu .menu-right .nav-menu-right{
+.menu .menu-left .nav-menu-left img {
+    top: 65%;
+    left: 15%;
+    position: absolute;
+}
+
+.menu .menu-right .nav-menu-right {
     display: flex;
     list-style: none;
     justify-content: space-between;
@@ -949,7 +985,7 @@ body {
 }
 
 .footer .footer-right .subscribe .btn-sub{
-    background: #f4a137;
+    background: none;
     border: none;
     margin-top: 3px;
 }
@@ -1075,7 +1111,7 @@ body {
     align-items: center;
 }
 
-.footer .image img{
+.footer .image img {
     width: 250px;
     height: 25px;
     margin-left: 45px;
