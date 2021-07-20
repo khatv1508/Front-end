@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>WebShop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/star-rating-svg.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-container container">
+            <div class="top">
+                <img src="../images/icon/clock.png" alt="">
+                <div class="text">
+                    <h4>30 DAY RETURN</h4>
+                    <p>moneyback guarantee</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="top">
+                <img src="../images/icon/car.png" alt="">
+                <div class="text">
+                    <h4>FREE SHIPPING ON $30</h4>
+                    <p>On all order over $99</p>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="top">
+                <img src="../images/icon/discount.png" alt="">
+                <div class="text">
+                    <h4>SAFE SHOPPING</h4>
+                    <p>Save up to 50% now</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="container">
+        <!-- HEADER -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <!-- top -->
+            <div class="top-left col-sm-7">
+                <div class="england">
+                    <img src="../images/icon/england.png" alt="">
+                    <select name="dropdown" id="dropdown" required="">
+                        <option value="england">English</option>
+                    </select>
+                </div>
+                <div class="currency">
+                    <select name="dropdown" id="dropdown" required="">
+                        <option value="usd">USD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="top-right col-sm-5">
+                <ul class="nav top-right">
+                    <li class="heart">
+                        <img src="../images/icon/heart.png" alt="">
+                        <p>Wishlist</p>
+                    </li>
+                    <li class="user">
+                        <img src="../images/icon/user.png" alt="">
+                        <p>My Account</p>
+                    </li>
+                    <li class="check">
+                        <img src="../images/icon/check.png" alt="">
+                        <p>Checkout</p>
+                    </li>
+                    <li class="login">
+                        <img src="../images/icon/lock.png" alt="">
+                        <p>Login</p>
+                    </li>
+                    <li>
+                        <div class="cart">
+                            <button class="btn-cart">
+                                <img src="../images/icon/cart_1.png" alt="">
+                                <div>
+                                    <span>0</span>
+                                </div>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- center -->
+            <div class="logo">
+                <h1>MARKET</h1>
+                <p>Shop all you want</p>
+            </div>
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="Search">
+                </form>
+                <i class="icon-search">
+                    <button class="btn-search">
+                        <img src="../images/icon/search.png" alt="">
+                    </button>
+                </i>
+            </div>
+
+            <div class="menu">
+                <!-- menu -->
+                <div class="menu-left col-sm-9">
+                    <ul class="nav-menu-left col-sm-9">
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="caret">HOME</span>
+
+                                <ul class="dropdown-menu">
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"></a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"></a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="caret">NEW ARRIVALS</span>
+                            </a>
+                            <div>
+                                <img src="../images/new.png" alt="">
+                            </div>
+                            <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            
+                        </li>
+                        <li><a href="#"><span class="caret">PROMOTIONS</span></a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span class="caret">SPECIALS</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"></a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="caret">BLOG</span></a></li>
+                        <li><a href="#"><span class="caret">CONTACT US</span></a></li>
+                        <li><a href="#"><span class="caret">ABOUT US</span></a></li>
+                    </ul>
+                </div>
+                <div class="menu-right col-sm-3">
+                    <ul class="nav-menu-right">
+                        <li>
+                            <a href="#">
+                                <span class="caret">SPECIAL OFFER!</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="caret">BUY THIS THEME!</span>
+                            </a>
+                            <div>
+                                <img src="../images/hot.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-line"></div>
+        </nav>
+
+        <!-- HEADER -->
+
+        <!-- carousel -->
+        <div class="wrapper">
+            <div class="side-left col-sm-9">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner custom-item">
+                        <div class="carousel-item active">
+                            <img src="../images/slide_1.png" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/slide_2.png" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/slide_3.png" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/slide_4.png" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/slide_5.png" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/slide_6.png" class="" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/slide_7.png" class="" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="side-right col-sm-3">
+                <div class="top">
+                    <div id="carouselExampleControls" class="carousel slide-top" data-bs-ride="carousel">
+                        <div class="custom-item" >
+                            <img src="../images/left_slide_top.png" class="" alt="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div id="carouselExampleControls" class="carousel slide-bottom" data-bs-ride="carousel">
+                        <div class="custom-item">
+                            <div class="carousel-item active">
+                                <img src="../images/left_slide_bottom_1.png" class="" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/left_slide_bottom_2.png" class="" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="main-logo">
+                <button type="button" class="btn btn-outline-primary">
+                    <img src="../images/icon/arrow_left.png" alt="">
+                </button>
+                <img src="../images/logo_1.png" alt="">
+                <img src="../images/logo_2.png" alt="">
+                <img src="../images/logo_3.png" alt="">
+                <img src="../images/logo_2.png" alt="">
+                <img src="../images/logo_1.png" alt="">
+                <button type="button" class="btn btn-outline-primary">
+                    <img src="../images/icon/arrow_right.png" alt="">
+                </button>
+            </div>
+            <div class="category">
+                <div class="category-left custom-item">
+                    <img src="../images/shop_men.png" alt="">
+                </div>
+                <div class="category-center">
+                    <div id="carouselExampleControls" class="carousel slide-center" data-bs-ride="carousel">
+                        <div class="custom-item">
+                            <div class="carousel-item active">
+                                <img src="../images/shop_kid_1.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/shop_kid_2.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/shop_kid_3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-right custom-item">
+                    <img src="../images/shop_women.png" alt="">
+                </div>
+            </div>
+            <div class="product-menu">
+                <div class="product-menu-left">
+                    <div class="new-arrivals">
+                        <h5>NEW ARRIVALS</h5>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <button type="button" class="btn btn-1 btn-outline-primary">
+                        <img src="../images/icon/arrow_left.png" alt="">
+                    </button>
+                    <button type="button" class="btn btn-2 btn-outline-primary">
+                        <img src="../images/icon/arrow_right.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-left">
+                    <img src="../images/product_1.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-center-1">
+                    <img src="../images/product_2.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-center-2">
+                    <img src="../images/product_3.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-right">
+                    <img src="../images/product_4.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panner">
+                <div class="panner-left">
+                    <img src="../images/panner_1.png" alt="">
+                </div>
+                <div class="panner-center">
+                    <div id="carouselExampleControls" class="carousel slide-center" data-bs-ride="carousel">
+                        <div class="custom-item">
+                            <div class="carousel-item active">
+                                <img src="../images/panner_2.png" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="../images/panner_3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panner-right">
+                    <img src="../images/panner_4.png" alt="">
+                </div>
+            </div>
+            <div class="product-menu-2">
+                <div class="product-menu-left">
+                    <div class="featured">
+                        <h5>FEATURED</h5>
+                    </div>
+                    <div class="line"></div>
+                    <div class="new-arrivals">
+                        <h5>NEW ARRIVALS</h5>
+                    </div>
+                    <div class="line"></div>
+                    <div class="best-sellers">
+                        <h5>BEST SELLERS</h5>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <button type="button" class="btn btn-1 btn-outline-primary">
+                        <img src="../images/icon/arrow_left.png" alt="">
+                    </button>
+                    <button type="button" class="btn btn-2 btn-outline-primary">
+                        <img src="../images/icon/arrow_right.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-left">
+                    <img src="../images/product_5.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-center-1">
+                    <img src="../images/product_6.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-center-2">
+                    <img src="../images/product_7.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-center-3">
+                    <img src="../images/product_8.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-right">
+                    <img src="../images/product_9.png" alt="">
+                    <p class="product-name">Duis autem veleum </p>
+                    <div class="star-rating"></div>
+                    <div class="price-text">
+                        <p class="product-price-1">$116.00</p>
+                        <p class="product-price-2">$127.00</p>
+                    </div>
+                    <div class="icon">
+                        <div class="icon-1">
+                            <img src="../images/icon/cart_2.png" alt="">
+                        </div>
+                        <div class="icon-2">
+                            <img src="../images/icon/heart.png" alt="">
+                        </div>
+                        <div class="icon-3">
+                            <img src="../images/icon/chart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="../js/star_rating.min.js"></script>
+    <script src="../js/main.js"></script>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Copyright -->
+        <div class="footer-top">
+            <div class="footer-left col-md-4">
+                <h5>THIS WEEK</h5>
+                <div class="text-1">
+                    <p>Introducing James Jagger for AW16 Men’s </p>
+                    <p class="view-more">View More</p>
+                </div>
+                <div class="text-1">
+                    <p>Autumn Winter 2016 </p>
+                    <p class="view-more">View More</p>
+                </div>
+                <div class="text-1">
+                    <p>Introducing James Jagger for AW16 Men’s </p>
+                    <p class="view-more">View More</p>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-right col-md-4">
+                <H5>KEEP IN TOUCH…</H5>
+                <p>Get style updates straight to your inbox. Simply enter your detail below to keep up-to-date with the latest news on collections and exclusive events.</p>
+                <div class="subscribe">
+                    <form action="">
+                        <input type="text" placeholder="Put your Email Address here">
+                    </form>
+                    <div class="text-subscribe">
+                        <button class="btn-sub">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-icon">
+                <h5>FOLLOW US</h5>
+                <div class="icon">
+                    <img src="../images/icon/icon_fb.png" alt="">
+                    <img src="../images/icon/icon_tt.png" alt="">
+                    <img src="../images/icon/icon_gg.png" alt="">
+                    <img src="../images/icon/icon_dribbble.png" alt="">
+                    <img src="../images/icon/icon_instagram.png" alt="">
+                    <img src="../images/icon/icon_youtube.png" alt="">
+                </div>
+            </div>
+            <div class="footer-text">
+                <div class="text-left">
+                    <ul>
+                        <h5>OUR SHOPS</h5>
+                        <li>Product Support</li>
+                        <li>PC Setup & Support</li>
+                        <li>Services</li>
+                        <li>Extended Service Plans</li>
+                        <li>Community</li>
+                    </ul>
+                </div>
+                <div class="text-center-1">
+                    <ul>
+                        <h5>ORDERS</h5>
+                        <li>My Account</li>
+                        <li>Order Tracking</li>
+                        <li>Watch List</li>
+                        <li>Customer Service</li>
+                        <li>Returns / Exchanges</li>
+                    </ul>
+                </div>
+                <div class="text-center-2">
+                    <ul>
+                        <h5>OUR SHOPS</h5>
+                        <li>Product Support</li>
+                        <li>PC Setup & Support</li>
+                        <li>Services</li>
+                        <li>Extended Service Plans</li>
+                        <li>Community</li> 
+                    </ul>
+                </div>
+                <div class="text-right col-md-4">
+                    <ul>
+                        <h5>CONTACT US</h5>
+                        <li class="map">
+                            <img src="../images/icon/icon_map.png" alt="">
+                            <p>Address: No 40 Baria Street 133/2 NewYork City, NY, United States</p>
+                        </li>
+                        
+                        <li class="mail">
+                            <img src="../images/icon/icon_mail.png" alt="">
+                            <p>Email: contact@market.com</p>
+                        </li>
+                       
+                        <li class="phone">
+                            <img src="../images/icon/icon_phone.png" alt="">
+                            <div class="number">
+                                <p>Phone 1: 0123456789</p>
+                                <p>Phone 2: 0123456789</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-text col-md-6"> 2016 Magento Themes Demo Store. All Rights Reserved. Designed by
+                <a href="#">Vinh Kha</a>
+            </div>
+            <div class="image col-md-6">
+                <img src="../images/footer.png" alt="">
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
