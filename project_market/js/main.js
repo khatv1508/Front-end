@@ -14,3 +14,17 @@
         });
     });
 })(jQuery);
+
+function openNav() {
+    $("#mySidenav").children().show();
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    $("#mySidenav").children().hide("slow");
+    setTimeout(
+        function(){ 
+            document.getElementById("mySidenav").style.width = "0"; 
+        },
+        100 );
+}
