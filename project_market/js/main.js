@@ -12,6 +12,35 @@
             ratedColors: ['#FDCC0D', '#FDCC0D', '#FDCC0D', '#FDCC0D', '#FDCC0D'],
             starShape: 'straight'
         });
+
+        // Carousel Left
+        // new bootstrap.Carousel(document.querySelector('#myCarousel'), {
+        //     interval: 2000,
+        //     wrap: true,
+        // })
+
+        // // Carousel right
+        // new bootstrap.Carousel(document.querySelector('#myCarousel1'), {
+        //     interval: 2000,
+        //     wrap: true,
+        // })
+
+        // new bootstrap.Carousel(document.querySelector('#myCarousel2'), {
+        //     interval: 2000,
+        //     wrap: true,
+        // })
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            centeredSlides: true,
+            spaceBetween: 30,
+            grabCursor: true,
+            loop: true,
+            navigation: {
+                nextEl: ".btn-next",
+                prevEl: ".btn-prev",
+              },
+          });
     });
 })(jQuery);
 
