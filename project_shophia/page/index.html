@@ -10,6 +10,7 @@
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -19,13 +20,13 @@
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-sm">
+                <div class="col-sm left-top-bar col-md-3">
                     <div class="top-left">
                         <img src="../images/icon/phone.png" alt="">
                         <p>Call +001 555 801</p>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm right-top-bar col-md-9">
                     <ul class="top-right">
                         <li class="welcom">WELCOME MSG!</li>
                         <div class="right-line"></div>
@@ -39,7 +40,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Header -->
     <div class="header">
@@ -70,10 +70,49 @@
             </nav>
         </div>
     </div>
+
+    <!-- header mobile -->
+    <header class="header-mobile">
+        <div class="logo-shop col-md-4">
+            <h1>Shophia</h1>
+        </div>
+        <button class="btn-menu" onclick="openNav()">
+            <img src="../images/icon/menu.png" alt="">
+        </button>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="nav-left">
+            <ul>
+                <li>Home</li>
+                <li>Gallery</li>
+                <li>Categories</li>
+                <li>Pages</li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="icon-header">
+                <img src="../images/icon/facebook.png" alt="">
+                <img src="../images/icon/twitter.png" alt="">
+                <img src="../images/icon/pinterest.png" alt="">
+                <img src="../images/icon/instagram.png" alt="">
+            </div>
+        </div>
+        <div class="currency">
+            <select name="dropdown" id="dropdown-currency" required="">
+                <option value="england">RUPIAH</option>
+            </select>
+        </div>
+    </div>
     
     <!-- Carousel -->
     <div class="wrapper">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../images/wrapper.png" alt="...">
+                </div>
+            </div> 
             <div class="carousel-indicators">
                 <button class="btn-wrapper" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                     aria-label="Slide 1"></button>
@@ -84,11 +123,6 @@
                 <button class="btn-wrapper" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 4"></button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../images/wrapper.png" alt="...">
-                </div>
-            </div> 
         </div>
         <div class="clip-wrapper"></div>
     </div>
@@ -137,15 +171,17 @@
         <!-- Title -->
         <div class="title">
             <div class="row">
-                <div class="col-sm">
+                <div class="col-sm left">
                     <div class="title-left"></div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm center">
                     <div class="title-text">
-                        <p>HandPicked</p>
+                        <div class="text">
+                            <p>HandPicked</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div class="col-sm right">
                     <div class="title-right"></div>
                 </div>
             </div>
@@ -154,22 +190,226 @@
         <!-- Gallery -->
         <div class="gallery">
             <div class="image-left col-md-4">
-                <img src="../images/gallery-1.png" alt="">
-                <div></div>
-                <div></div>
-                <div></div>
-                <img src="../images/gallery-2.png" alt="">
+                <div class="image-1">
+                    <img src="../images/gallery-1.png" alt="">
+                    <div class="line-vertical"></div>
+                    <div class="line-horizontal"></div>
+                    <div class="shop-now">
+                        <button class="btn">
+                            <a href="#"><p>SHOP NOW</p></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="image-2">
+                    <img src="../images/gallery-2.png" alt="">
+                </div>
             </div>  
             <div class="image-center col-md-4">
                 <img src="../images/gallery-3.png" alt="">
             </div>
             <div class="image-right col-md-4">
-                <img src="../images/gallery-4.png" alt="">
-                <img src="../images/gallery-5.png" alt="">
+                <div class="image-1">
+                    <img src="../images/gallery-4.png" alt="">
+                </div>
+                <div class="image-2">
+                    <img src="../images/gallery-5.png" alt="">
+                </div>
+                
             </div>
         </div>
 
+        <!-- Title -->
+        <div class="title">
+            <div class="row">
+                <div class="col-sm left">
+                    <div class="title-left"></div>
+                </div>
+                <div class="col-sm center">
+                    <div class="title-text">
+                        <div class="text">
+                            <p>Summer Collection</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm right">
+                    <div class="title-right"></div>
+                </div>
+            </div>
+        </div>
 
+        <!-- Add cart -->
+        <div class="cart">
+            <div class="top">
+                <div class="add-cart col-md-3 col-sm-6">
+                    <img src="../images/product-1.png" alt="">
+                    <div class="cart-clip active">
+                        <button class="btn-add">
+                            <a href="#"><p>&#43; ADD TO CART</p></a>
+                        </button> 
+                    </div>
+                    <div>
+                        <span>20&#37;</span>
+                    </div>
+                </div>
+                <div class="add-cart col-md-3 col-sm-6">
+                    <img src="../images/product-2.png" alt="">
+                    <div class="cart-clip">
+                        <button class="btn-add">
+                            <a href="#"><p>&#43; ADD TO CART</p></a>
+                        </button> 
+                    </div>
+                </div>
+                <div class="add-cart col-md-3">
+                    <img src="../images/product-3.png" alt="">
+                    <div class="cart-clip">
+                        <button class="btn-add">
+                            <a href="#"><p>&#43; ADD TO CART</p></a>
+                        </button> 
+                    </div>
+                </div>
+                <div class="add-cart col-md-3">
+                    <img src="../images/product-4.png" alt="">
+                    <div class="cart-clip">
+                        <button class="btn-add">
+                            <a href="#"><p>&#43; ADD TO CART</p></a>
+                        </button> 
+                    </div>
+                    <div>
+                        <span>40&#37;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="add-cart col-md-3">
+                    <img src="../images/product-5.png" alt="">
+                    <div class="cart-clip active">
+                        <button class="btn-add">
+                            <a href="#"><p>&#43; ADD TO CART</p></a>
+                        </button> 
+                    </div>
+                    <div>
+                        <span>20&#37;</span>
+                    </div>
+                </div>
+                <div class="add-cart col-md-3">
+                    <img src="../images/product-6.png" alt="">
+                    <div class="cart-clip">
+                        <button class="btn-add">
+                            <a href="#"><p>&#43; ADD TO CART</p></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="add-cart col-md-3">
+                    <img src="../images/product-7.png" alt="">
+                    <div class="cart-clip">
+                        <button class="btn-add">
+                            <a href="#"><p>&#43; ADD TO CART</p></a>
+                        </button> 
+                    </div>
+                </div>
+                <div class="add-cart col-md-3">
+                    <img src="../images/product-8.png" alt="">
+                    <div class="cart-clip">
+                        <button class="btn-add">
+                            <a href="#"><p>&#43; ADD TO CART</p></a>
+                        </button> 
+                    </div>
+                    <div>
+                        <span>40&#37;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+            <div class="row">
+                <div class="col-sm left">
+                    <div class="title-left"></div>
+                </div>
+                <div class="col-sm center">
+                    <div class="title-text">
+                        <div class="text">
+                            <p>Our Brand</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm right">
+                    <div class="title-right"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand logo -->
+        <div class="brand-logo">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="../images/brand-1.png" alt="">
+                </div>
+                <div class="col-sm">
+                    <img src="../images/brand-2.png" alt="">
+                </div>
+                <div class="col-sm">
+                    <img src="../images/brand-3.png" alt="">
+                </div>
+                <div class="col-sm">
+                    <img src="../images/brand-4.png" alt="">
+                </div>
+                <div class="col-sm">
+                    <img src="../images/brand-5.png" alt="">
+                </div>
+                <div class="col-sm">
+                    <img src="../images/brand-6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Title -->
+        <div class="title">
+            <div class="row">
+                <div class="col-sm left">
+                    <div class="title-left"></div>
+                </div>
+                <div class="col-sm center">
+                    <div class="title-text">
+                        <div class="text">
+                            <p>Customers Says</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm right">
+                    <div class="title-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Customers -->
+    <div class="customer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="women">
+                        <img src="../images/customer-women.png" alt="">
+                        <div class="women-text">
+                            <p class="slogan">Sed ut perspiciatis<br>unde omnis iste natus error sit<br>voluptatem accusantium doloremque</p>
+                            <p class="name">Sandra Dewi</p>
+                            <p class="stylish">FASHION STYLISH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="men">
+                        <div class="men-text">
+                            <p class="slogan">Sed ut perspiciatis<br>unde omnis iste natus error sit<br>voluptatem accusantium doloremque</p>
+                            <p class="name">Shaheer Sheikh </p>
+                            <p class="designer">DESIGNER</p>
+                        </div>
+                        <img src="../images/customer-men.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clip-customer"></div>
     </div>
 
     <!-- js -->
@@ -182,19 +422,96 @@
     <script src="../js/main.js"></script>
 
     <!-- Footer -->
-    <footer>
-        <div class="copyright">
-            <div class="container">
-                <div class="copyright-text col-md-6">
-                    <p>© 2015 Shopia Fashion Store Shopify.</p>
-                    <p>All Rights Reserved. Ecommerce Software by Shophia.</p>
-                    <p>Designed by <a href="#">Vinh Kha</a></p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-left">
+                    <div class="col-sm left-text">
+                        <div class="shops">
+                            <ul>
+                                <h5>SHOPS</h5>
+                                <li>New In</li>
+                                <li>Women</li>
+                                <li>Men</li>
+                                <li>Shoes</li>
+                                <li>Bags & Accessories</li>
+                                <li>Top Brands</li>
+                                <li>Sale & Special Offers</li>
+                                <li>Lookbook</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm left-text">
+                        <div class="infomation">
+                            <ul>
+                                <h5>INFORMATION</h5>
+                                <li>About us</li>
+                                <li>Customer Service</li>
+                                <li>New Collection</li>
+                                <li>Best Sellers</li>
+                                <li>Manufacturers</li>
+                                <li>Private policy</li>
+                                <li>Terms & condition</li>
+                                <li>Blog</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="image col-md-6">
-                    <img src="../images/footer.png" alt="">
+                <div class="footer-right">
+                    <div class="col-sm right-text">
+                        <div class="customer-service">
+                            <ul>
+                                <h5>CUSTOMER SERVICE</h5>
+                                <li>Search Terms</li>
+                                <li>Advanced Search</li>
+                                <li>Orders and Return</li>
+                                <li>Contact Us</li>
+                                <li>RSS</li>
+                                <li>Help & DAQs</li>
+                                <li>Consultant</li>
+                                <li>Store Locations</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm right-text">
+                        <h5>STAY CONNECTED</h5>
+                        <div class="icon">
+                            <img src="../images/icon/facebook_2.png" alt="">
+                            <img src="../images/icon/twitter_2.png" alt="">
+                            <img src="../images/icon/instagram_2.png" alt="">
+                            <img src="../images/icon/pinterest_2.png" alt="">
+                            <img src="../images/icon/rss.png" alt="">
+                        </div>
+                        <h5>SUBSCRIBE <i>in</i> OUR NEWS LETTER</h5>
+                        <div class="subscribe">
+                            <form action="">
+                                <input type="text" placeholder="Put your Email Address here">
+                            </form>
+                            <div class="text-subscribe">
+                                <button class="btn-sub">SUBSCRIBE</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="line">
+                <div class="line-clip"></div>
+            </div>
+            <div class="copyright">
+                <div>
+                    <div class="copyright-text">
+                        <p>© 2015 Shopia Fashion Store Shopify. <br>All Rights Reserved. Ecommerce Software by Shopify. <br>Designed by Vinh Kha</p>
+                    </div>
+                    <div class="image">
+                        <img src="../images/footer.png" alt="">
+                    </div>
+                </div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn-top">
+                    <i class="bi bi-chevron-up"></i>
+                </button>
+            </div>
         </div>
+        <div class="footer-line"></div>
     </footer>
     <!-- Footer -->
 </body>
