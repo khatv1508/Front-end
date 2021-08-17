@@ -29,3 +29,24 @@ function closeNav() {
         },
         100 );
 }
+
+// dropdown
+$("a.dropdown-item").on("click", function(){
+    var text = $(this).text();
+    $("#dropdownMenuButton1").text(text);
+})
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    slidesPerView: 1,
+    centeredSlides: true,
+    spaceBetween: 30,
+    grabCursor: true,
+    loop: true,
+    navigation: {
+        nextEl: ".btn-next",
+        prevEl: ".btn-prev",
+    },
+  });

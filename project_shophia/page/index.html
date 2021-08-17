@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -20,13 +21,13 @@
     <div class="top-bar">
         <div class="container">
             <div class="row">
-                <div class="col-sm left-top-bar col-md-3">
+                <div class="col-sm left-top-bar col-sm-3 col-md-3 col-lg-5">
                     <div class="top-left">
                         <img src="../images/icon/phone.png" alt="">
                         <p>Call +001 555 801</p>
                     </div>
                 </div>
-                <div class="col-sm right-top-bar col-md-9">
+                <div class="col-sm right-top-bar col-sm-9 col-md-9 col-lg-7">
                     <ul class="top-right">
                         <li class="welcom">WELCOME MSG!</li>
                         <div class="right-line"></div>
@@ -45,27 +46,34 @@
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="nav-left col-md-4">
+                <div class="nav-left col-md-4 col-lg-4">
                     <ul>
-                        <li>Home</li>
-                        <li>Gallery</li>
-                        <li>Categories</li>
-                        <li>Pages</li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Pages</a></li>
                     </ul>
                 </div>
-                <div class="logo-shop col-md-4">
+                <div class="logo-shop col-md-4 col-lg-4">
                     <h1>Shophia</h1>
                 </div>
-                <div class="nav-right col-md-4">
+                <div class="nav-right col-md-4 col-lg-4">
                     <div class="icon-header">
                         <img src="../images/icon/facebook.png" alt="">
                         <img src="../images/icon/twitter.png" alt="">
                         <img src="../images/icon/pinterest.png" alt="">
                         <img src="../images/icon/instagram.png" alt="">
                     </div>
-                    <select name="dropdown" id="dropdown-currency" required="">
-                        <option value="england">RUPIAH</option>
-                    </select>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            RUPIAH
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">RUPIAH</a></li>
+                          <li><a class="dropdown-item" href="#">DOLLAR</a></li>
+                          <li><a class="dropdown-item" href="#">VND</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -84,10 +92,10 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="nav-left">
             <ul>
-                <li>Home</li>
-                <li>Gallery</li>
-                <li>Categories</li>
-                <li>Pages</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Pages</a></li>
             </ul>
         </div>
         <div class="nav-right">
@@ -99,32 +107,154 @@
             </div>
         </div>
         <div class="currency">
-            <select name="dropdown" id="dropdown-currency" required="">
-                <option value="england">RUPIAH</option>
-            </select>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    RUPIAH
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">RUPIAH</a></li>
+                  <li><a class="dropdown-item" href="#">DOLLAR</a></li>
+                  <li><a class="dropdown-item" href="#">VND</a></li>
+                </ul>
+            </div>
         </div>
     </div>
     
     <!-- Carousel -->
     <div class="wrapper">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                     <img src="../images/wrapper.png" alt="...">
+                    <div class="clip-wrapper"></div>
+                    <div class="text-wrapper">
+                        <div class="text">
+                            <p class="mid-season">MID-SEASON</p>
+                            <p class="sale">SALE</p>
+                            <div class="text-up-to">
+                                <div class="line-left">
+                                    <div class="line-upto-1"></div>
+                                    <div class="line-upto-2"></div>
+                                </div>
+                                <div class="center">
+                                    <p class="up-to">UP TO</p>
+                                </div>
+                                <div class="line-right">
+                                    <div class="line-upto-1"></div>
+                                    <div class="line-upto-2"></div>
+                                </div>
+                            </div>
+                            <div class="number-off">
+                                <p class="number">50&#37;</p> 
+                                <p class="off">OFF</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-now">
+                        <button class="btn">
+                            <a href="#"><p>SHOP NOW</p></a>
+                        </button>
+                    </div>
                 </div>
-            </div> 
-            <div class="carousel-indicators">
-                <button class="btn-wrapper" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                    aria-label="Slide 1"></button>
-                <button class="btn-wrapper active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-current="true" aria-label="Slide 2"></button>
-                <button class="btn-wrapper" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button class="btn-wrapper" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 4"></button>
+                <div class="swiper-slide">
+                    <img src="../images/wrapper.png" alt="...">
+                    <div class="clip-wrapper"></div>
+                    <div class="text-wrapper">
+                        <div class="text">
+                            <p class="mid-season">MID-SEASON</p>
+                            <p class="sale">SALE</p>
+                            <div class="text-up-to">
+                                <div class="line-left">
+                                    <div class="line-upto-1"></div>
+                                    <div class="line-upto-2"></div>
+                                </div>
+                                <div class="center">
+                                    <p class="up-to">UP TO</p>
+                                </div>
+                                <div class="line-right">
+                                    <div class="line-upto-1"></div>
+                                    <div class="line-upto-2"></div>
+                                </div>
+                            </div>
+                            <div class="number-off">
+                                <p class="number">50&#37;</p> 
+                                <p class="off">OFF</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-now">
+                        <button class="btn">
+                            <a href="#"><p>SHOP NOW</p></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/wrapper.png" alt="...">
+                    <div class="clip-wrapper"></div>
+                    <div class="text-wrapper">
+                        <div class="text">
+                            <p class="mid-season">MID-SEASON</p>
+                            <p class="sale">SALE</p>
+                            <div class="text-up-to">
+                                <div class="line-left">
+                                    <div class="line-upto-1"></div>
+                                    <div class="line-upto-2"></div>
+                                </div>
+                                <div class="center">
+                                    <p class="up-to">UP TO</p>
+                                </div>
+                                <div class="line-right">
+                                    <div class="line-upto-1"></div>
+                                    <div class="line-upto-2"></div>
+                                </div>
+                            </div>
+                            <div class="number-off">
+                                <p class="number">50&#37;</p> 
+                                <p class="off">OFF</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-now">
+                        <button class="btn">
+                            <a href="#"><p>SHOP NOW</p></a>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/wrapper.png" alt="...">
+                    <div class="clip-wrapper"></div>
+                    <div class="text-wrapper">
+                        <div class="text">
+                            <p class="mid-season">MID-SEASON</p>
+                            <p class="sale">SALE</p>
+                            <div class="text-up-to">
+                                <div class="line-left">
+                                    <div class="line-upto-1"></div>
+                                    <div class="line-upto-2"></div>
+                                </div>
+                                <div class="center">
+                                    <p class="up-to">UP TO</p>
+                                </div>
+                                <div class="line-right">
+                                    <div class="line-upto-1"></div>
+                                    <div class="line-upto-2"></div>
+                                </div>
+                            </div>
+                            <div class="number-off">
+                                <p class="number">50&#37;</p> 
+                                <p class="off">OFF</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-now">
+                        <button class="btn">
+                            <a href="#"><p>SHOP NOW</p></a>
+                        </button>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="clip-wrapper"></div>
     </div>
 
     <!-- Banner -->
@@ -418,6 +548,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="../js/main.js"></script>
 
